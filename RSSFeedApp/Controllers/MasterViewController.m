@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "RSSFeedApp-Swift.h"
+#import "ItemDetails.h"
 #import "NewsItem+CoreDataProperties.h"
 #import "RSSBriefCell.h"
 

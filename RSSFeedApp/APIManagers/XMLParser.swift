@@ -44,7 +44,7 @@ class XMLParser: NSObject,NSXMLParserDelegate {
         if(elementNam.isEqualToString("media:thumbnail"))
         {
             let dict:NSDictionary = attributeDict;
-            let imageUrl:NSString! = dict.objectForKey("url") as! NSString;
+            let imageUrl:String! = dict.objectForKey("url") as! String;
             currentItem.thumbNailURL = imageUrl;
         }
     }
@@ -61,7 +61,7 @@ class XMLParser: NSObject,NSXMLParserDelegate {
             else if(elementNam.isEqualToString("description"))
             {
                 // The property name couldn't be description because of redundant ios naming convention.
-                currentItem.descriptionText = NSString(string: attributeValue);
+                currentItem.descriptionText = String(attributeValue);
             }
             else if(!elementNam.isEqualToString("media:content") && !elementNam.isEqualToString("media:thumbnail")){
                  var value:NSString = NSString(string: attributeValue);
