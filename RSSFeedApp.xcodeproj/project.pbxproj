@@ -10,12 +10,9 @@
 		CE83681B1D0CF25000A6D594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE83681A1D0CF25000A6D594 /* main.m */; };
 		CE83681E1D0CF25000A6D594 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE83681D1D0CF25000A6D594 /* AppDelegate.m */; };
 		CE8368211D0CF25000A6D594 /* RSSFeedApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE83681F1D0CF25000A6D594 /* RSSFeedApp.xcdatamodeld */; };
-		CE8368241D0CF25000A6D594 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8368231D0CF25000A6D594 /* MasterViewController.m */; };
-		CE8368271D0CF25000A6D594 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8368261D0CF25000A6D594 /* DetailViewController.m */; };
 		CE83682A1D0CF25000A6D594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8368281D0CF25000A6D594 /* Main.storyboard */; };
 		CE83682C1D0CF25000A6D594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE83682B1D0CF25000A6D594 /* Assets.xcassets */; };
 		CE83682F1D0CF25000A6D594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE83682D1D0CF25000A6D594 /* LaunchScreen.storyboard */; };
-		CE83683A1D0CF25000A6D594 /* RSSFeedAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8368391D0CF25000A6D594 /* RSSFeedAppTests.m */; };
 		CE83686A1D0CFA5200A6D594 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83685E1D0CFA5200A6D594 /* RequestFactory.swift */; };
 		CE83686B1D0CFA5200A6D594 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83685F1D0CFA5200A6D594 /* RequestManager.swift */; };
 		CE83686C1D0CFA5200A6D594 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8368601D0CFA5200A6D594 /* XMLParser.swift */; };
@@ -23,6 +20,8 @@
 		CE83686E1D0CFA5200A6D594 /* NewsItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8368641D0CFA5200A6D594 /* NewsItem+CoreDataProperties.m */; };
 		CE83686F1D0CFA5200A6D594 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8368661D0CFA5200A6D594 /* NewsItem.m */; };
 		CE8368701D0CFA5200A6D594 /* RSSBriefCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8368691D0CFA5200A6D594 /* RSSBriefCell.m */; };
+		CE8368761D0CFBDD00A6D594 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8368731D0CFBDD00A6D594 /* DetailViewController.m */; };
+		CE8368771D0CFBDD00A6D594 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8368751D0CFBDD00A6D594 /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,17 +40,11 @@
 		CE83681C1D0CF25000A6D594 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE83681D1D0CF25000A6D594 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE8368201D0CF25000A6D594 /* RSSFeedApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSSFeedApp.xcdatamodel; sourceTree = "<group>"; };
-		CE8368221D0CF25000A6D594 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		CE8368231D0CF25000A6D594 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		CE8368251D0CF25000A6D594 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		CE8368261D0CF25000A6D594 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		CE8368291D0CF25000A6D594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE83682B1D0CF25000A6D594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE83682E1D0CF25000A6D594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8368301D0CF25000A6D594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8368351D0CF25000A6D594 /* RSSFeedAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSFeedAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE8368391D0CF25000A6D594 /* RSSFeedAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSFeedAppTests.m; sourceTree = "<group>"; };
-		CE83683B1D0CF25000A6D594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8368441D0CF39D00A6D594 /* RSSFeedApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSFeedApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE8368501D0CF39D00A6D594 /* RSSFeedAppTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSSFeedAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE83685E1D0CFA5200A6D594 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
@@ -64,6 +57,10 @@
 		CE8368661D0CFA5200A6D594 /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 		CE8368681D0CFA5200A6D594 /* RSSBriefCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSBriefCell.h; sourceTree = "<group>"; };
 		CE8368691D0CFA5200A6D594 /* RSSBriefCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSBriefCell.m; sourceTree = "<group>"; };
+		CE8368721D0CFBDD00A6D594 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		CE8368731D0CFBDD00A6D594 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		CE8368741D0CFBDD00A6D594 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		CE8368751D0CFBDD00A6D594 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				CE8368181D0CF25000A6D594 /* RSSFeedApp */,
-				CE8368381D0CF25000A6D594 /* RSSFeedAppTests */,
 				CE8368171D0CF25000A6D594 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,15 +101,12 @@
 		CE8368181D0CF25000A6D594 /* RSSFeedApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE8368711D0CFBDD00A6D594 /* Controllers */,
 				CE83685D1D0CFA5200A6D594 /* APIManagers */,
 				CE8368611D0CFA5200A6D594 /* Models */,
 				CE8368671D0CFA5200A6D594 /* Views */,
 				CE83681C1D0CF25000A6D594 /* AppDelegate.h */,
 				CE83681D1D0CF25000A6D594 /* AppDelegate.m */,
-				CE8368221D0CF25000A6D594 /* MasterViewController.h */,
-				CE8368231D0CF25000A6D594 /* MasterViewController.m */,
-				CE8368251D0CF25000A6D594 /* DetailViewController.h */,
-				CE8368261D0CF25000A6D594 /* DetailViewController.m */,
 				CE8368281D0CF25000A6D594 /* Main.storyboard */,
 				CE83682B1D0CF25000A6D594 /* Assets.xcassets */,
 				CE83682D1D0CF25000A6D594 /* LaunchScreen.storyboard */,
@@ -132,15 +125,6 @@
 				CE83681A1D0CF25000A6D594 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE8368381D0CF25000A6D594 /* RSSFeedAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE8368391D0CF25000A6D594 /* RSSFeedAppTests.m */,
-				CE83683B1D0CF25000A6D594 /* Info.plist */,
-			);
-			path = RSSFeedAppTests;
 			sourceTree = "<group>";
 		};
 		CE83685D1D0CFA5200A6D594 /* APIManagers */ = {
@@ -172,6 +156,17 @@
 				CE8368691D0CFA5200A6D594 /* RSSBriefCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CE8368711D0CFBDD00A6D594 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE8368721D0CFBDD00A6D594 /* DetailViewController.h */,
+				CE8368731D0CFBDD00A6D594 /* DetailViewController.m */,
+				CE8368741D0CFBDD00A6D594 /* MasterViewController.h */,
+				CE8368751D0CFBDD00A6D594 /* MasterViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,14 +272,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE83686E1D0CFA5200A6D594 /* NewsItem+CoreDataProperties.m in Sources */,
-				CE8368271D0CF25000A6D594 /* DetailViewController.m in Sources */,
 				CE83686F1D0CFA5200A6D594 /* NewsItem.m in Sources */,
-				CE8368241D0CF25000A6D594 /* MasterViewController.m in Sources */,
 				CE8368211D0CF25000A6D594 /* RSSFeedApp.xcdatamodeld in Sources */,
 				CE83686D1D0CFA5200A6D594 /* ItemDetails.swift in Sources */,
+				CE8368771D0CFBDD00A6D594 /* MasterViewController.m in Sources */,
 				CE8368701D0CFA5200A6D594 /* RSSBriefCell.m in Sources */,
 				CE83686A1D0CFA5200A6D594 /* RequestFactory.swift in Sources */,
 				CE83686B1D0CFA5200A6D594 /* RequestManager.swift in Sources */,
+				CE8368761D0CFBDD00A6D594 /* DetailViewController.m in Sources */,
 				CE83686C1D0CFA5200A6D594 /* XMLParser.swift in Sources */,
 				CE83681E1D0CF25000A6D594 /* AppDelegate.m in Sources */,
 				CE83681B1D0CF25000A6D594 /* main.m in Sources */,
@@ -295,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE83683A1D0CF25000A6D594 /* RSSFeedAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
