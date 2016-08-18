@@ -24,6 +24,8 @@ class RequestFactory: NSObject {
         
         // Initialize request completion block
         let block:RequestManagerBlock =  { (url, response) -> () in
+            let stringValue:NSString = NSString.init(data: response, encoding: NSUTF8StringEncoding)!;
+            print("\(stringValue)")
             self.xmlParser = XMLParser().initWithData(response , block: parsingBlock);
         };
         requestManager.serverCallToURL(url,block: block);

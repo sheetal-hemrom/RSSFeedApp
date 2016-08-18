@@ -41,7 +41,7 @@ class XMLParser: NSObject,NSXMLParserDelegate {
             currentItem = ItemDetails();
             itemsArray.addObject(currentItem);
         }
-        if(elementNam.isEqualToString("media:thumbnail"))
+        if(elementNam.isEqualToString("media:content"))
         {
             let dict:NSDictionary = attributeDict;
             let imageUrl:String! = dict.objectForKey("url") as! String;
@@ -61,17 +61,37 @@ class XMLParser: NSObject,NSXMLParserDelegate {
             else if(elementNam.isEqualToString("description"))
             {
                 // The property name couldn't be description because of redundant ios naming convention.
-                currentItem.descriptionText = String(attributeValue);
+                currentItem.descriptionText = String(attributeValue)
             }
-            else if(!elementNam.isEqualToString("media:content") && !elementNam.isEqualToString("media:thumbnail")){
-                 var value:NSString = NSString(string: attributeValue);
-                  value = value.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet());
-                currentItem.setValue(value, forKey: elementNam as NSString as String)
-            }
+            else if currentItem.respondsToSelector(NSSelectorFromString(elementNam as String)) {
+                
+                    print("Item present \(elementNam)")
+                    var value:NSString = NSString(string: attributeValue);
+                    value = value.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet());
+                    currentItem.setValue(value, forKey: elementNam as NSString as String)
+             }
+                
+//                var outCount : UInt32 = 0
+//                let properties = class_copyPropertyList(ItemDetails.self, &outCount);
+//                
+//                for i:UInt32  in 0..<outCount {
+//                    let strKey : NSString? = NSString(CString: property_getName(properties[Int(i)]), encoding: NSUTF8StringEncoding)
+//                    print(strKey)
+//                }
+                
+                
+//                
+//                let mirrored_object = Mirror(reflecting: currentItem)
+//                for (index, attr) in mirrored_object.children.enumerate() {
+//                    if let property_name = attr.label as String! {
+//                        print("Attr \(index): \(property_name) = \(attr.value)")
+//                    }
+//                }
         }
         self.attributeValue="";
         
     }
+    
     func parser(parser: NSXMLParser, foundAttributeDeclarationWithName attributeName: String, forElement elementName: String, type: String?, defaultValue: String?) {
         NSLog(elementName,attributeName);
     }

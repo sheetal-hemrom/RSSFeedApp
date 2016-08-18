@@ -44,6 +44,4 @@ class RequestManager: NSObject,NSURLConnectionDataDelegate {
         }
        
     }
-    
-  
 }

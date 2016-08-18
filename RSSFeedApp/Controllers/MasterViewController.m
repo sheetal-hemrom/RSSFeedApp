@@ -188,6 +188,8 @@
 - (void)downloadImageFor:(NewsItem *)newsItem
 {
     NSURL *imgURL = [NSURL URLWithString:newsItem.thumbNailURL];
+    
+    if (imgURL != nil) {
     RequestFactory *manager = [[RequestFactory alloc] init];
     __weak MasterViewController *weakSelf = self;
     [manager fetchImageForURL:imgURL completion:^(NSData * _Nonnull imageData) {
@@ -196,6 +198,7 @@
                         [weakSelf updateImageForNewsItem:newsItem withImageData:imageData];
                    }
     }];
+    }
 }
 
 -(void)updateImageForNewsItem:(NewsItem*)newsItem withImageData:(NSData*)data
